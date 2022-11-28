@@ -1,0 +1,10 @@
+---
+- hosts: ALL
+  become: yes
+  tasks:
+  - name: i want to create a folder
+    file:
+      path: /home/ubuntu/kiwi
+      state: directory
+
+    
